@@ -1,4 +1,5 @@
 package main;
+import util.DBSetup;
 
 import dao.CourseDAO;
 import dao.MarkDAO;
@@ -13,6 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        DBSetup.createTables();
 
         Scanner sc = new Scanner(System.in);
 
